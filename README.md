@@ -10,7 +10,9 @@ my work : <your working link>
 	
 <!--edit the line above--!>
 ------
-<br>
+<p>
+</p>
+<p>
 Read the instruction.pdf.
 <ul>
 <li>fork this git repo and upload your files.</li>
@@ -18,4 +20,4 @@ Read the instruction.pdf.
 <li>replace <your working link> with url of your hosted site</li>
 <li>start a pull request</li>
 </ul>
-
+</p>
