@@ -17,7 +17,7 @@ Read the instruction.pdf.
 <ul>
 <li>fork this git repo and upload your files.</li>
 <li>you can have multiple pull request, close one before opening another</li>
-<li>replace <your working link> with url of your hosted site</li>
+<li>edit Readme.md and replace &lt;your working link&gt; with url of your hosted site</li>
 <li>start a pull request</li>
 </ul>
 </p>
