@@ -9,7 +9,7 @@ The IX-th Problem Statement.
 my work : &lt;your working link&gt;
 	
 <!--edit the line above--!>
-___________
+
 <p>
 </p>
 <p>
