@@ -1,12 +1,20 @@
-<span><img src=""></span>
+<span><img src="https://s3.ap-south-1.amazonaws.com/venuefy.images/venuefy-logo.png"></span>
 
 # ProblemStatement-IX
 
 The IX-th Problem Statement.
+------
+!-- edit this line below--!
 
-<p style="text-align: justify;">
-	Consider a hypothetical company XYZ.inc wants to show off it's products on a webpage titled "Products". You are given a task to design functional webpages for the same. The list of products is given in the Data.json file. Use Mongodb as a database for your website. Create the product list and product profiles. 
-</p>
+my work : <your working link>
 	
-	upload the file and start a pull request 
-	host your website in any hosting service and provide a link for the same
+!--edit the line above--!
+------
+Read the instruction.pdf.
+<ul>
+<li>fork this git repo and upload your files.</li>
+<li>you can have multiple pull request, close one before opening another</li>
+<li>replace <your working link> with url of your hosted site</li>
+<li>start a pull request</li>
+</ul>
+
