@@ -6,7 +6,7 @@ The IX-th Problem Statement.
 ------
 <!-- edit this line below--!>
 
-my work : &lt https://product-website123.herokuapp.com/blogs gt;
+my work : &lt https://product-website123.herokuapp.com/blogs >;
 	
 <!--edit the line above--!>
 
