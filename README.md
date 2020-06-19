@@ -6,8 +6,11 @@ The IX-th Problem Statement.
 ------
 <!-- edit this line below--!>
 
-my work : &lt;your working link&gt;
-	
+my work : &lt; https://shyamprgrmr.github.io/myapp/ &gt;
+
+<p>Frontend : Reactjs &lt; frontend directory &gt;</p>
+<p>Backend : Nodejs &lt; backend directory &gt;</p>	
+
 <!--edit the line above--!>
 
 <p>
@@ -17,7 +20,9 @@ Read the instruction.pdf.
 <ul>
 <li>fork this git repo and upload your files.</li>
 <li>you can have multiple pull request, close one before opening another</li>
-<li>edit Readme.md and replace &lt;your working link&gt; with url of your hosted site</li>
+<li>edit Readme.md and replace &lt; https://shyamprgrmr.github.io/myapp/ &gt; with url of your hosted site</li>
 <li>start a pull request</li>
 </ul>
 </p>
+
+
