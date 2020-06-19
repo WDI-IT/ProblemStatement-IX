@@ -1,0 +1,127 @@
+html, body {
+    padding:0;
+}
+body {
+    background-color:rgb(225, 225, 225);
+    font-family:Raleway;
+    font-size:14px;
+}
+h1 {
+    display:block;
+    margin:0.5em;
+}
+#act-cont {
+    display:block;
+    height:auto;
+    width:80%;
+    max-width:800px;
+    background-color:white;
+    box-shadow:0px 0px 1px black;
+    padding:0.5em 1em;
+    margin: 0 auto 1em auto;
+    border-radius:2px;
+}
+#act-cont hr {
+    margin:1em 0;
+}
+#form-disp {
+    display:block;
+    padding:0.5em;
+    height:auto;
+}
+#form-disp b{
+    display:block;
+    font-size:18px;
+    margin-bottom:1em;
+    text-decoration:underline;
+}
+._inp {
+    display:block;
+    height:3em;
+    min-width:300px;
+    font-family:Raleway;
+    font-size: 14px;
+    outline:0;
+    border:1px solid grey;
+    margin: 0.4em 0;
+}
+._inp:focus {
+    border-width:1.5px;
+}
+._inp:read-only:focus {
+    border-width:1px;
+}
+._inp#prod_id{
+    width:80%;
+}
+#act-cont ._inp {
+    display:inline-block;
+}
+.btn {
+    display:inline-block;
+    padding:0.7em 1em;
+    height:3em;
+    min-width:5em;
+    font-family:Raleway;
+    font-size:12px;
+    font-weight:bold;
+    border-width:1px;
+    border-style: solid;
+    outline:0;
+    border-radius:2px;
+    cursor:pointer;
+    margin:auto;
+    transition:0.05s ease-in;
+}
+.btn:hover {
+    box-shadow: 1px 1px 1px grey; 
+}
+.btn:active {
+    box-shadow:none; 
+}
+.btn._a {
+    background-color:lightgreen;
+    border-color:green;
+}
+.btn._e {
+    background-color:skyblue;
+    border-color:blue;
+}
+.btn._d {
+    background-color:pink;
+    border-color:red;
+}
+.btn._n {
+    background-color:white;
+    border-color:black;
+}
+#prod-det {
+    display:grid;
+    grid-template-columns: auto 300px;
+    padding: 0.5em 2em;
+    margin:1em 0;
+    background-image:linear-gradient(to right, white, transparent);
+    border-left:2px solid grey;
+}
+#prod-det ._inp {
+    width:100%
+}
+label {
+    display:block;
+    font-weight:bold;
+    margin:1em 0;
+}
+#prod-det img {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: calc(50% - 100px);
+    border: 1px solid grey;
+    background-color: white;
+}
+#prod-det textarea{
+    padding:0.5em 0.2em;
+    min-height:6em;
+    resize:none;
+    word-wrap: normal;
+}

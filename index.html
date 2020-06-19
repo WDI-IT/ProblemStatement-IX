@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="vue.js"></script>
+    <script src="comp.js"></script>
+    <script src="btnHandler.js"></script>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <div id="act-cont">
+      <label>
+        Product ID
+        <br />
+        <input type="text" id="prod_id" class="_inp" placeholder="Product ID" />
+      </label>
+      <button id="_edit" class="btn _e">Edit Product</button>
+      <button id="_del" class="btn _d">Delete Product</button>
+      <hr />
+      <button id="_add" class="btn _a">Add Product</button>
+      <button id="_list" class="btn _n">List Product(s)</button>
+    </div>
+    <div id="form-disp">
+      <b v-if="compAction !== ''">{{title}}</b>
+      <component
+        v-bind:is="comp"
+        v-bind:data-action="compAction"
+        v-bind:product="product"
+        v-on:del="clear"
+        v-for="product,i in products"
+        v-bind:key="i"
+      ></component>
+    </div>
+  </body>
+</html>
