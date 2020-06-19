@@ -48,7 +48,7 @@ export default class App extends React.Component{
       else{
         if(result.success){
             let tempProds = this.state.products;
-            let id = new Date().getTime();
+            
             product.id = result.result._id;
             tempProds.push(product);
             this.setState({products:tempProds,show:'list'});  
