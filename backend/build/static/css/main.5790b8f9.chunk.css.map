@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA,UACI,YAAa,CACb,cACJ,CAEA,MACI,WAAY,CACZ,WACJ","file":"main.5790b8f9.chunk.css","sourcesContent":[".products {\n    display: flex;\n    flex-wrap: wrap;\n}\n\n.card {\n    margin: 10px;\n    width: 300px;\n}"]}
