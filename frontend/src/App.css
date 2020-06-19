@@ -1,0 +1,43 @@
+
+body{
+  font-family: 'Lato', sans-serif;
+  
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+button:not(:last-child){
+  margin-right: 5px;
+  
+}
+
+button:hover{
+  color: #000;
+  transition: all .3s;
+  background-color: #8080df !important;
+}
+
+.activebtn{
+  color: #000;
+}
+
+input{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 1px #8080df;
+  font-size: 17px;
+  font-family:'Lato', sans-serif ;
+}
+
+label{
+  margin-bottom: 6px !important;
+  margin-top: 10px !important;
+  font-size: 15px;
+}
