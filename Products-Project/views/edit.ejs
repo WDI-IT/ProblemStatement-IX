@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+<div class="content">
+  <h1>Edit Product</h1>
+  <form action="/edit" method="post">
+  <div class="form-group">
+    <label>Enter Product ID</label>
+    <input type="text" class="form-control" name="productID">
+    <br>
+    <h2>Enter New Product Details</h2>
+
+    <label>Product Name</label>
+    <input type="text" class="form-control" name="productName">
+    <label>Image Link</label>
+    <input type="url" class="form-control" name="productLink">
+
+    <label>Product Description</label>
+    <textarea class="form-control" rows="3" name="productDescription"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg" name="button">Submit</button>
+</form>
+</div>
+
+<%- include("partials/footer"); -%>

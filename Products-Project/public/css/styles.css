@@ -1,0 +1,81 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  background-color: #e3f2fd;
+  margin: 0 0 100px;
+
+}
+h1{
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0 1.5rem 0;
+}
+h5,h4{
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.navbar-brand{
+  padding-left: 1.5rem;
+}
+.nav-item{
+  padding: 1.5rem 2.5rem;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+
+.content{
+  padding: 4% 12%;
+}
+
+
+.footer {
+	text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  background-color: #66bfbf;
+  padding: 40px 0 20px;
+  width:100%;
+  overflow: hidden;
+}
+
+.img1{
+  height: 150px;
+  width:150px;
+  float: left;
+  margin-right: 40px;
+}
+.img2{
+  height: 150px;
+  width:150px;
+  float:right;
+  margin-left: 40px;
+
+}
+.img3{
+  height: 180px;
+  width:180px;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+}
+.home{
+    width: 70%;
+    margin: 30px auto 100px auto;
+    text-align: left;
+}

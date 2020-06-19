@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+
+<div class="content">
+  <h1>Create Product</h1>
+  <form action="/create" method="post">
+  <div class="form-group">
+    <label>Product Name</label>
+    <input type="text" class="form-control" name="productName">
+
+    <label>Image Link</label>
+    <input type="url" class="form-control" name="productLink">
+
+    <label>Product Description</label>
+    <textarea class="form-control" rows="3" name="productDescription"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg" name="button">Submit</button>
+</form>
+</div>
+
+<%- include("partials/footer"); -%>

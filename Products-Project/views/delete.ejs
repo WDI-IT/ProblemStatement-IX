@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+
+<div class="content">
+  <h1>Delete Product</h1>
+  <form action="/delete" method="post">
+  <div class="form-group">
+    <label>Enter Product ID</label>
+    <input type="text" class="form-control" name="productID">
+
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg" name="button">Submit</button>
+</form>
+</div>
+
+<%- include("partials/footer"); -%>
