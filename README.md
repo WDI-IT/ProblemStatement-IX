@@ -6,7 +6,7 @@ The IX-th Problem Statement.
 ------
 <!-- edit this line below--!>
 
-my work : &lt;your working link&gt;
+my work : &lt;https://github.com/abhilakshm/internship10&gt;
 	
 <!--edit the line above--!>
 
