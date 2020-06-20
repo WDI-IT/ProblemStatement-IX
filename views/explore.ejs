@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <Title>Explore</Title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="css/explore.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <script src="https://kit.fontawesome.com/ebfafc2eb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="explore.js"></script>
+    <script src="owl.carousel.min.js"></script>
+</head>
+
+<body class="light">
+    <div class="navbar">
+        <div class="searchbox animated zoomIn">
+            <form method="get" action="/explore">
+                <input oninput="triggercross(this.value)" onkeyup="searchFunction()" type="text" placeholder="search"
+                    id="search" name="search" class="search"><i class="fas fa-search"></i>
+                <button onclick="close1()" id="closeid" type="reset" class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    
+    <h2 class="text-center">WELCOME TO SHOPPING CART</h2>
+    <div class="text-center">
+    <a href="/admin/products/add_product" class="btn btn-primary " style="margin:10px;">Add a Product</a>
+    <a href="/admin/products" class="btn btn-primary" style="margin:10px;">Edit a Product</a>
+    <a href="/admin/products" class="btn btn-primary" style="margin:10px;">Delete a Product</a>
+    <a href="/admin/products" class="btn btn-primary" style="margin:10px;">List all Product</a></div>
+    <div class="col-md-12 center">
+        <% if(noMatch!== undefined) { %>
+        <h3><%= noMatch %></h3>
+        <% } %>
+    </div>
+    <div class="row text-center flex-wrap" id="campground-grid">
+        <% for(var i=0;i<products.length ;i++) { %>
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <img src="<%= products[i].image%>" alt="Avatar" style="width:100%; height:200px;" >
+  <div class="container">
+    <h4><b><%= products[i].name%></b></h4>
+    <p>RS <%= products[i].price%>
+                        <br><%= products[i].desc%></p>
+                          </div>
+</div>
+            </div>
+        <% } %>
+    </div>
+    
+    
+</body>
+
+</html>

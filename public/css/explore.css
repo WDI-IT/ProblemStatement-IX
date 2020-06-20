@@ -1,0 +1,145 @@
+
+.light{
+  --bg:var(--gray3);
+  --navfont:var(--gray6);
+  --tabfont:var(--gray6);
+  --hoverbg:var(--gray6);
+  --hoverfont:var(--gray4);
+  --selectedtab:var(--gray3);
+}
+body{
+    margin:0;
+    padding:0;
+background-color:var(--bg);
+font-family: 'Nunito Sans', sans-serif;
+}
+
+form button:hover{
+  color:#333;
+}
+
+.navbar{
+  background-color:var(--bg);
+  font-family: 'Nunito Sans', sans-serif;
+  max-width:100%;
+  display: flex;
+ /* flex-wrap: wrap; */
+ justify-content:start;
+ border-bottom: 0.5px solid var(--navfont);
+ margin:0 !important;
+ padding:0;
+}
+
+.navbutton{
+  top:20px;
+  background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+  color:var(--navfont);
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  outline:none;
+}
+
+.navbutton:hover{
+  background-color:var(--hoverbg) ;
+  border-radius: 25px;
+  text-decoration: none;
+  outline:none;
+  color:var(--hoverfont);
+}
+
+.boxlayout{
+  
+  width: 1200px;
+  margin:30px auto; 
+  columns:4;
+  column-gap: 50px;
+}
+
+.box{
+  
+width: 300%;
+  height:300px;
+    position:relative;
+    overflow:hidden;
+    break-inside: avoid;  
+    margin:10 10 10px;
+    padding: 10px;
+   
+    /* perspective: 1000px; 
+    -webkit-backface-visibility: hidden; /* Safari */
+    /* backface-visibility: hidden; */ 
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.searchbox{
+      position: relative;
+      display: inline-block;
+      margin-left: 1.5rem;
+    }
+    .searchbox input:focus {
+      outline: none; /*By default,input shows an outline on focus */
+    }
+    .searchbox input{
+      z-index: 0;
+      margin-top: 6%;
+      width: 250%;
+      height: 40px;
+      background:#b8bfc6;
+      border-radius: 25px;
+      border: 2px solid #b8bfc6;
+    }
+    form{
+      display:inline-block;
+    }
+  #closeid{
+    display: none;
+    outline: none;
+  }
+  .card {
+  /* Add shadows to create the "card" effect */
+  width:300px;
+  height:350px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.fa-search{
+       position: absolute;
+       top:39%;
+       left:8%;
+       color:#8e99a4;
+   }
+  
+ form button:hover{
+   color:#333;
+ }
+   .close{
+          position: absolute;
+          top:40%;
+          right:-160%;
+          color:#8e99a4;
+          z-index: 3;
+          outline: none;
+          background-color: #b8bfc6;
+          border: none;
+          padding: 0;
+   }
+   .search{
+    color:#333;
+    font-weight: 400; 
+    padding-left: 50px;
+    font-size: 18px;
+    z-index: 3;
+    
+   }
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 8px;
+}

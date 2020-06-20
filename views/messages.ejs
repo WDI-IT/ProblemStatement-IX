@@ -1,0 +1,10 @@
+    <% Object.keys(messages).forEach(function (type) { %>
+        <div class="alert alert-<%= type %>">
+      <ul class="<%= type %>">
+      <% messages[type].forEach(function (message) { %>
+        <li><%= message %></li>
+      <% }) %>
+      </ul>
+    </div>
+    <% }) %>
+   

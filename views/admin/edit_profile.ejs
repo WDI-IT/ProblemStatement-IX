@@ -1,0 +1,35 @@
+<%- include ("../layouts/adminheader") %>
+<h2 class ="page-title">Edit a product</h2>
+<a href="/admin/products" class="btn btn-primary">Back to products</a>
+<form method="POST" action="/admin/products/edit_product/<%= id %>" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input type="text" class="form-control" name="name" value="<%= name %>" >
+    </div>
+    <div class="form-group">
+      <label for="">Description</label>
+      <textarea  class="form-control" name="desc" rows="10" cols="30" ><%= desc %></textarea>
+  </div>
+  
+
+<div class="form-group">
+
+  <label for="">Image</label>
+  
+        <input type="text" class="form-control" value="<%=image %> " name="image" id="img">
+        
+  
+</div>
+
+    <div class="form-group">
+      <label for="">Price</label>
+      <input type="text" class="form-control" name="price" value="<%= price %>">
+    </div>
+    
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+<%- include ("../layouts/adminfooter") %>
+
+
