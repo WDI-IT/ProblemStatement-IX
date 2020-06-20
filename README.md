@@ -6,7 +6,8 @@ The IX-th Problem Statement.
 ------
 <!-- edit this line below--!>
 
-my work : &lt;your working link&gt;
+my work : https://distribution-system.herokuapp.com/
+Github repo:- https://github.com/sidjain18/DistributionSystem
 	
 <!--edit the line above--!>
 
