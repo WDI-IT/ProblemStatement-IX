@@ -16,6 +16,7 @@ Vue.component('product-detail', {
     `<div id= 'prod-det'>
         <div class= '_pd'>
             <form>
+            <label>Product Id : <input type= 'text' class= '_inp' placeholder= 'Product ID' v-if= 'showId' readonly= 'true' v-bind:value= 'id'></label>
                 <label>Product Name : <input type= 'text' class= '_inp' placeholder= 'Product Name' v-model= 'name' v-bind:readonly= 'readOnly' /></label>
                 <label v-if= 'showLinkInput'>Product Image (link) : <input type= 'text' class= '_inp' placeholder= 'Image Link' v-model= 'link' /></label>
                 <label>Project Description
@@ -80,6 +81,12 @@ Vue.component('product-detail', {
             if (this.$props.dataAction === 'read') {
                 return false
             } else return true
+        },
+        // show product id
+        showId: function () {
+            if (this.$props.dataAction !== 'add') {
+                return true
+            } else return false
         }
     },
     watch: {
