@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Edit Product</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <style>
+       #form{
+           border: 4px solid black;
+           padding: 10px 10px;
+           border-radius: 20px;
+       }
+       label{
+           padding: 10px;
+           font-weight: bold ;
+       }
+       input{
+           padding: 10px;
+           width: 550px;
+           height: 15px;
+           border-radius: 20px;
+       }
+       textarea{
+           width: 550px;
+           height: 200px;
+       }
+       button{
+           width: 160px;
+           height: 30px;
+           border-radius: 20px;
+           margin-left: 20px;
+       }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Edit the Products</p>
+        <div id="form">
+           
+                <label>Product Id:</label><br><br>
+                <input id="productId" type="text" placeholder=" Enter Product ID"/><br><br>
+                <label>Product Tilte:</label><br/><br/>
+                <input id="title" type="text" placeholder="Product title"/><br/><br/>
+                <label>Product Image url :</label><br/><br/>
+                <input id="url" type="text" placeholder="Product img Url link"/><br/><br/>
+                <label>Product Description:</label><br/><br/>
+                <textarea id="desc" type="text" placeholder="Description"></textarea><br/><br/>
+                <button onclick="show()">Update</button>
+                <h4 id="submit"></h4> 
+                
+           
+        </div>  
+    
+    </div>
+
+
+    <script> 
+            function show() { 
+                
+                console.log("in");
+                var id=document.getElementById("productId").value;
+                var title =document.getElementById("title").value; 
+                var url =document.getElementById("url").value; 
+                var desc =document.getElementById("desc").value; 
+                var data={"id":id,
+                "Name":title,
+                "imgsrc":url,
+                "description":desc
+                }                
+                
+                fetch("/editproduct",{ 
+                    method: "POST", 
+                    body: JSON.stringify(data), 
+                    headers: { 
+                        "Content-type": "application/json; charset=UTF-8"
+                    } 
+                }) 
+                .then(response => response.json()) 
+                .then(json => console.log(json)); 
+                                
+                 } 
+
+  </script>
+
+    
+    
+    {{>footer}}
+</body>
+
+</html>
