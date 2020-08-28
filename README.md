@@ -6,7 +6,7 @@ The IX-th Problem Statement.
 ------
 <!-- edit this line below--!>
 
-my work : &lt;your working link&gt;
+my work : http://mediplusritwikrajkumar.epizy.com/index.php ;
 	
 <!--edit the line above--!>
 
