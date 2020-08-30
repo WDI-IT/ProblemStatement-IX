@@ -2,11 +2,11 @@
 
 # ProblemStatement-IX
 
-The IX-th Problem Statement.
-------
+## The IX-th Problem Statement.
+
 <!-- edit this line below--!>
 
-my work : &lt;your working link&gt;
+my work : https://xyz-product.netlify.app/;
 	
 <!--edit the line above--!>
 
@@ -21,4 +21,4 @@ Read the instruction.pdf.
 <li>start a pull request</li>
 </ul>
 </p>
-### if you have face problem with images, you can use any image of your own choice 
+### if you have face problem with images, you can use any image of your own choice
