@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+<body>
+   
+    <form class="product-form" action="/admin/edit-product" method="POST" ><div style="background-image: url('download.jpg');">
+        <h1 style="color:#ff2058; text-decoration: underline; margin-top: 3%; " class="product-form">EDIT PRODUCT  </h1>
+        <div class="form-control">
+            <label for="productId">Product Id</label>
+            <input 
+            type="text" 
+            name="productId" 
+            id="productId"/>
+        </div>
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input 
+                type="text" 
+                name="title" 
+                id="title"
+               />
+        </div>
+    
+        <div class="form-control">
+            <label for="image">Image</label>
+            <input 
+                type="text" 
+                name="image" 
+                id="image" 
+               />
+        </div>
+        
+        <div class="form-control">
+            <label for="price">Price</label>
+            <input 
+                type="number" 
+                name="price" 
+                id="price" 
+                step="0.01"
+                 />
+        </div>
+        <div class="form-control">
+            <label for="description">Description</label>
+            <textarea 
+                name="description" 
+                id="description" 
+                rows="5"></textarea>
+        </div>
+
+        <button class="btn" type="submit">UPDATE PRODUCT</button>
+    </form>
+</main>
+
+</body>
+</html>
